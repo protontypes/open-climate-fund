@@ -4,7 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: "/open-climate-fund",
+  basePath: process.env.NODE_ENV === 'production' ? "/open-climate-fund" : "",
 };
 
 export default nextConfig;

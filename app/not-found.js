@@ -7,7 +7,8 @@ export default function Custom404() {
   const router = useRouter()
 
   useEffect(() => {
-    router.replace('/open-climate-fund' + window.location.pathname)
+    const basePath = process.env.NODE_ENV === 'production' ? '/open-climate-fund' : '';
+    router.replace(basePath + window.location.pathname)
   }, [])
 
   return null
