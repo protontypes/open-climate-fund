@@ -23,5 +23,6 @@
     "eslint": "^8",
     "eslint-config-next": "14.2.9"
   },
-  "homepage": "https://protontypes.github.io/open-climate-fund"
+  "homepage": "https://protontypes.github.io/open-climate-fund",
+  "type": "module"
 }

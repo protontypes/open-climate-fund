@@ -7,4 +7,4 @@ const nextConfig = {
   basePath: "/open-climate-fund",
 };
 
-module.exports = nextConfig;
+export default nextConfig;
