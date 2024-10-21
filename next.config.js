@@ -1,4 +1,3 @@
-// next.config.mjs
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
@@ -6,7 +5,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: "",
+  basePath: process.env.NODE_ENV === "production" ? "/open-climate-fund" : "",
 };
 
 export default nextConfig;
