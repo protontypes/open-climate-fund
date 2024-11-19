@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-const { fontFamily } = require("tailwindcss/defaultTheme");
+import { fontFamily } from "tailwindcss/defaultTheme";
 
 const config: Config = {
   content: [
@@ -84,7 +84,7 @@ const config: Config = {
           900: "#fafcfd"
         }
       },
-      typography: (theme) => ({
+      typography: (theme: (arg0: string) => unknown) => ({
         default: {
           css: {
             color: theme("colors.gray.900"),

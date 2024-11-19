@@ -1,21 +1,39 @@
+'use client';
+import { FaGithub } from 'react-icons/fa';
+import Link from 'next/link';
+
 export default function GetStarted() {
   return (
-    <section
-      id="get-started"
-      className="py-16 sm:py-24 bg-gray-900 text-white"
-    >
-      <div className="container mx-auto text-center px-4">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 text-green-400">
-          Ready to Make a Difference?
-        </h2>
-        <a
-          href="https://github.com/protontypes/open-sustainable-technology/blob/main/CONTRIBUTING.md"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-green-500 text-gray-900 px-8 py-4 rounded-lg text-lg sm:text-xl font-semibold inline-block hover:bg-green-400 transition-colors"
-        >
-          Contribute to OpenSustain.tech
-        </a>
+    <section className="py-24 px-6 sm:px-8 lg:px-12 bg-gradient-to-b from-silver-50 to-white">
+      <div className="max-w-7xl mx-auto">
+        <div className="bg-glass backdrop-blur-md shadow-elevated rounded-3xl p-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-black-800 mb-6">
+            Ready to Make an Impact?
+          </h2>
+          <p className="text-xl text-silver-400 max-w-2xl mx-auto mb-12">
+            Join our community of contributors and help drive sustainable technology forward through open source collaboration.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <Link 
+              href="https://github.com/protontypes/open-sustainable-technology/blob/main/CONTRIBUTING.md#contributing-guide"
+              target="_blank"
+              className="rounded-xl bg-primary-600 px-8 py-4 text-lg text-white 
+                shadow-subtle hover:shadow-elevated hover:bg-primary-500 
+                transition-all duration-300 flex items-center gap-3"
+            >
+              <FaGithub className="w-6 h-6" />
+              Submit Your Project
+            </Link>
+            <Link 
+              href="#how-it-works"
+              className="rounded-xl bg-glass px-8 py-4 text-lg text-black-800 
+                shadow-subtle hover:shadow-elevated 
+                transition-all duration-300"
+            >
+              Learn More
+            </Link>
+          </div>
+        </div>
       </div>
     </section>
   );

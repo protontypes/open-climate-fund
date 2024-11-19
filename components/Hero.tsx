@@ -1,21 +1,37 @@
+import Link from "next/link";
+
 export default function Hero() {
   return (
-    <section className="bg-black-500 text-silver-500 py-16 sm:py-24">
-      <div className="container mx-auto text-center px-4">
-        <h1 className="text-3xl sm:text-5xl font-bold mb-6 leading-tight">
-          Fund Open Source <br className="hidden sm:inline" />
-          <span className="text-green-500">Sustainability Projects</span>
-        </h1>
-        <p className="text-lg sm:text-xl mb-10 max-w-2xl mx-auto text-silver-400">
-          Contribute to OpenSustain.tech and support open source projects making a difference in our world.
-        </p>
-        <a 
-          href="#get-started" 
-          className="bg-primary-600 text-silver-500 px-8 py-4 rounded-lg text-lg font-semibold inline-block hover:bg-primary-500 transition-colors"
+    <section className="pt-32 pb-24 px-6 sm:px-8 lg:px-12">
+      <div className="max-w-7xl mx-auto animate-fade-in">
+        <div
+          className="bg-gradient-to-b from-azure-500/10 to-transparent 
+          rounded-4xl shadow-elevated p-12 backdrop-blur-xs"
         >
-          Get Started
-        </a>
+          <h1
+            className="text-5xl md:text-6xl lg:text-7xl font-semibold 
+            tracking-tight text-black-500 leading-tight"
+          >
+            Fund Open Source <br className="hidden sm:inline" />
+            <span className="text-green-500">Sustainability Projects</span>
+          </h1>
+          <p className="mt-6 text-xl text-silver-400 max-w-3xl">
+            Contribute to OpenSustain.tech and support open source projects
+            making a difference in our world.
+          </p>
+          <div className="mt-10 flex gap-4">
+            <Link href="https://github.com/protontypes/open-sustainable-technology/blob/main/CONTRIBUTING.md#contributing-guide">
+              <button
+                className="rounded-xl bg-primary-600 px-6 py-3 text-lg text-white 
+              shadow-subtle hover:shadow-elevated hover:bg-primary-500 
+              transition-all duration-300"
+              >
+                Submit a Project
+              </button>
+            </Link>
+          </div>
+        </div>
       </div>
     </section>
-  )
+  );
 }

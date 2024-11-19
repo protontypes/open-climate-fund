@@ -1,53 +1,63 @@
+'use client';
+import { FaPlus, FaHandHoldingUsd, FaMoneyBillWave } from 'react-icons/fa';
+import { FaCodePullRequest } from 'react-icons/fa6';
+
 export default function HowItWorks() {
   const steps = [
     {
       title: "Add Project",
       description: "Add an Open Source Project to OpenSustain.tech",
       link: "https://github.com/protontypes/open-sustainable-technology/blob/main/CONTRIBUTING.md#contributing-guide",
+      icon: <FaPlus className="w-8 h-8 text-primary-600" />
     },
     {
       title: "Choose Donation",
       description: "Select a Donation Link on OpenClimate.fund",
       link: "https://openclimate.fund/",
+      icon: <FaHandHoldingUsd className="w-8 h-8 text-primary-600" />
     },
     {
       title: "Link PR",
       description: "Add the donation link to your opened Pull Request",
+      icon: <FaCodePullRequest className="w-8 h-8 text-primary-600" />
     },
     {
       title: "Fund Projects",
-      description: "After you added Project is accepted, the donation is executed",
+      description: "After your added Project is accepted, the donation is executed",
+      icon: <FaMoneyBillWave className="w-8 h-8 text-primary-600" />
     },
   ];
 
   return (
-    <section id="how-it-works" className="py-16 sm:py-24 bg-black-500">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 sm:mb-16 text-green-500">
+    <section className="py-24 px-6 sm:px-8 lg:px-12">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-black-800 mb-12 text-center">
           How It Works
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
-            <div key={index} className="bg-black-600 p-6 rounded-lg shadow-lg border border-primary-600">
-              <div className="text-2xl sm:text-3xl font-bold text-primary-500 mb-4">
-                {index + 1}
+            <div key={index} 
+              className="group bg-glass backdrop-blur-sm shadow-card rounded-2xl p-8
+                hover:shadow-elevated transition-all duration-300 animate-scale-in"
+              style={{ animationDelay: `${index * 100}ms` }}>
+              <div className="bg-primary-50 rounded-xl p-4 w-16 h-16 flex items-center justify-center mb-6">
+                {step.icon}
               </div>
-              <h3 className="text-xl sm:text-2xl font-semibold mb-3 text-silver-500">
+              <h3 className="text-2xl font-semibold tracking-tight text-black-800 mb-4">
                 {step.title}
               </h3>
-              {step.link ? (
+              <p className="text-lg text-silver-400 leading-relaxed">
+                {step.description}
+              </p>
+              {step.link && (
                 <a 
                   href={step.link}
-                  className="text-sm sm:text-base text-silver-400 underline decoration-primary-500/50 hover:text-primary-400 hover:decoration-primary-400 transition-all"
+                  className="mt-4 inline-block text-primary-600 hover:text-primary-700 font-medium"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {step.description}
+                  Learn more →
                 </a>
-              ) : (
-                <p className="text-sm sm:text-base text-silver-400">
-                  {step.description}
-                </p>
               )}
             </div>
           ))}

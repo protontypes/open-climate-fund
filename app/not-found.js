@@ -9,7 +9,7 @@ export default function Custom404() {
   useEffect(() => {
     const basePath = process.env.NODE_ENV === 'production' ? '/open-climate-fund' : '';
     router.replace(basePath + window.location.pathname)
-  }, [])
+  }, [router])
 
   return null
 }
