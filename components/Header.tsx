@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { useState } from 'react'
+import Image from 'next/image'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -8,7 +9,15 @@ export default function Header() {
     <header className="bg-gray-900 text-white p-4">
       <nav className="container mx-auto">
         <div className="flex justify-between items-center">
-          <Link href="/" className="text-2xl font-bold text-green-400">OpenClimate.fund</Link>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/OpenClimatefund_paths.svg"
+              alt="OpenClimate.fund Logo"
+              width={200}
+              height={40}
+              className="h-6 w-auto"
+            />
+          </Link>
           <button
             className="sm:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
