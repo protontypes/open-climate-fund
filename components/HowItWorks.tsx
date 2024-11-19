@@ -1,10 +1,25 @@
 export default function HowItWorks() {
   const steps = [
-    { title: "Add Project", description: "Add an Open Source Project to OpenSustain.tech" },
-    { title: "Choose Donation", description: "Select a Donation Link on OpenClimate.fund" },
-    { title: "Link PR", description: "Add the donation link to your Pull Request" },
-    { title: "Fund Projects", description: "Donate to open source projects you're not associated with" }
-  ]
+    {
+      title: "Add Project",
+      description: "Add an Open Source Project to OpenSustain.tech",
+      link: "https://github.com/protontypes/open-sustainable-technology/blob/main/CONTRIBUTING.md#contributing-guide",
+    },
+    {
+      title: "Choose Donation",
+      description: "Select a Donation Link on OpenClimate.fund",
+      link: "https://openclimate.fund/", // TODO:https://openclimate.fund/grist
+    },
+    {
+      title: "Link PR",
+      description: "Add the donation link to your opened Pull Request",
+    },
+    {
+      title: "Fund Projects",
+      description:
+        "After you added Project is accepted, the donation is executed",
+    },
+  ];
 
   return (
     <section id="how-it-works" className="py-16 sm:py-24 bg-gray-800">
@@ -15,7 +30,20 @@ export default function HowItWorks() {
             <div key={index} className="bg-gray-700 p-6 rounded-lg shadow-lg border border-green-400">
               <div className="text-2xl sm:text-3xl font-bold text-green-400 mb-4">{index + 1}</div>
               <h3 className="text-xl sm:text-2xl font-semibold mb-3 text-white">{step.title}</h3>
-              <p className="text-sm sm:text-base text-gray-300">{step.description}</p>
+              {step.link ? (
+                <a 
+                  href={step.link}
+                  className="text-sm sm:text-base text-gray-200 underline decoration-green-400/50 hover:text-green-400 hover:decoration-green-400 transition-all"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {step.description}
+                </a>
+              ) : (
+                <p className="text-sm sm:text-base text-gray-200">
+                  {step.description}
+                </p>
+              )}
             </div>
           ))}
         </div>
