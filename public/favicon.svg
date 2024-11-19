@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="192px" height="192px"><svg width="192px" height="192px" viewBox="0 0 192 192" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>favicon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="SvgjsPolygon1027" points="0 0.468590164 79.9541333 0.468590164 79.9541333 79.1099016 0 79.1099016"></polygon>
+    </defs>
+    <g id="SvgjsG1026" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SvgjsG1025" transform="translate(22.000000, 14.000000)">
+            <g id="SvgjsG1024">
+                <mask id="SvgjsMask1023" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="SvgjsG1022"></g>
+                <path d="M34.2434667,79.1099016 L-0.000533333333,79.1099016 C-0.000533333333,35.7472787 35.8674667,0.468590164 79.9541333,0.468590164 L79.9541333,34.1499016 C54.7488,34.1499016 34.2434667,54.319082 34.2434667,79.1099016" id="SvgjsPath1021" fill="#3B52FF" mask="url(#mask-2)"></path>
+            </g>
+            <path d="M149,165 C104.887601,165 69,129.562311 69,86 L103.262653,86 C103.262653,110.903477 123.781289,131.16563 149,131.16563 L149,165 Z" id="SvgjsPath1020" fill="#00E6A7"></path>
+        </g>
+    </g>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
+</style></svg>
