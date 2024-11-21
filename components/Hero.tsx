@@ -12,8 +12,8 @@ export default function Hero() {
             className="text-5xl md:text-6xl lg:text-7xl font-semibold 
             tracking-tight text-black-500 leading-tight"
           >
-            Fund Open Source <br className="hidden sm:inline" />
-            <span className="text-green-500">Sustainability Projects</span>
+            Fund Open Source in<br className="hidden sm:inline" />
+            <span className="text-green-500">Climate & Sustainability</span>
           </h1>
           <p className="mt-6 text-xl text-silver-400 max-w-3xl">
             Contribute to OpenSustain.tech and support open source projects
