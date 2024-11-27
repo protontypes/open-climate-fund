@@ -1,23 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaGithub } from 'react-icons/fa';
-import { FaMastodon } from 'react-icons/fa6';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-
-  const socialLinks = [
-    {
-      name: "GitHub",
-      icon: FaGithub,
-      href: "https://github.com/protontypes/",
-    },
-    {
-      name: "Mastodon",
-      icon: FaMastodon,
-      href: "https://mastodon.social/@opensustaintech",
-    },
-  ];
 
   return (
     <footer className="bg-black-500">
