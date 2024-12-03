@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="pt-32 pb-24 px-6 sm:px-8 lg:px-12">
+    <section className="pt-32 pb-12 px-6 sm:px-8 lg:px-12">
       <div className="max-w-7xl mx-auto animate-fade-in">
         <div
           className="bg-gradient-to-b from-azure-500/10 to-transparent 
@@ -23,7 +23,7 @@ export default function Hero() {
             <Link href="https://github.com/protontypes/open-sustainable-technology/blob/main/CONTRIBUTING.md#contributing-guide">
               <button
                 className="rounded-xl bg-primary-600 px-6 py-3 text-lg text-white 
-              shadow-subtle hover:shadow-elevated hover:bg-primary-500 
+              shadow-subtle hover:shadow-elevated hover:bg-green-500 
               transition-all duration-300"
               >
                 Submit a Project

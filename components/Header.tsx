@@ -71,7 +71,7 @@ export default function Header() {
               </Link>
               <button
                 className="rounded-xl bg-primary-600 px-6 py-2.5 text-lg text-white 
-                shadow-subtle hover:shadow-elevated hover:bg-primary-500 
+                hover:bg-green-500 
                 transition-all duration-300"
               >
                 Get Started

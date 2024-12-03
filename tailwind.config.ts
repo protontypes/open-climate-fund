@@ -48,12 +48,12 @@ const config: Config = {
           900: "#dff6ff"
         },
         green: {
-          DEFAULT: "#47f6ad",
+          DEFAULT: "#00e6a7",
           100: "#033c24",
           200: "#067949",
           300: "#09b56d",
           400: "#0bf292",
-          500: "#47f6ad",
+          500: "#00e6a7",
           600: "#6bf8bd",
           700: "#90face",
           800: "#b5fcde",

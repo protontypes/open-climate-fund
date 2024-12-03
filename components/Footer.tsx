@@ -36,7 +36,7 @@ export default function Footer() {
               href="https://opensustain.tech/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-silver-400 hover:text-primary-400 transition-colors text-sm"
+              className="text-silver-400 hover:text-primary-600 transition-colors text-sm"
             >
               Powered by OpenSustain.tech
             </Link>
