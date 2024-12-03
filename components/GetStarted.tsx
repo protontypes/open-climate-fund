@@ -27,7 +27,7 @@ export default function GetStarted() {
             <Link 
               href="#how-it-works"
               className="rounded-xl bg-glass px-8 py-4 text-lg text-black-800 
-                shadow-subtle hover:shadow-elevated 
+                shadow-subtle  hover:text-primary-600 
                 transition-all duration-300"
             >
               Learn More

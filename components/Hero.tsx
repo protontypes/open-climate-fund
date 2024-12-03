@@ -6,11 +6,11 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto animate-fade-in">
         <div
           className="bg-gradient-to-b from-azure-500/10 to-transparent 
-          rounded-4xl shadow-elevated p-12 backdrop-blur-xs"
+          rounded-3xl shadow-elevated p-12 backdrop-blur-xs"
         >
           <h1
             className="text-5xl md:text-6xl lg:text-7xl font-semibold 
-            tracking-tight text-black-500 leading-tight"
+            tracking-tight text-white-500 leading-tight"
           >
             Fund Open Source in<br className="hidden sm:inline" />
             <span className="text-green-500">Climate & Sustainability</span>
