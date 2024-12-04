@@ -29,9 +29,9 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section className="py-24 px-6 sm:px-8 lg:px-12">
+    <section className="pb-12 pt-12 px-6 sm:px-8 lg:px-12">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-black-800 mb-12 text-center">
+        <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-primary-600 mb-12 text-center">
           How It Works
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -43,7 +43,7 @@ export default function HowItWorks() {
               <div className="bg-primary-50 rounded-xl p-4 w-16 h-16 flex items-center justify-center mb-6">
                 {step.icon}
               </div>
-              <h3 className="text-2xl font-semibold tracking-tight text-black-800 mb-4">
+              <h3 className="text-2xl font-semibold tracking-tight text-green-500 mb-4">
                 {step.title}
               </h3>
               <p className="text-lg text-silver-400 leading-relaxed">
@@ -52,7 +52,7 @@ export default function HowItWorks() {
               {step.link && (
                 <a 
                   href={step.link}
-                  className="mt-4 inline-block text-primary-600 hover:text-primary-700 font-medium"
+                  className="mt-4 inline-block text-primary-600 hover:text-green-500 font-medium"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

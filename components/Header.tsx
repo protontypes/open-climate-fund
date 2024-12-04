@@ -6,9 +6,9 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="fixed w-full top-0 z-50">
+    <header className="fixed w-full backdrop-blur-md top-0 z-50">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <div className="bg-glass backdrop-blur-md shadow-glass rounded-2xl px-6 py-3">
+        <div className="bg-glass shadow-glass rounded-2xl px-6 py-3">
           <div className="flex justify-between items-center">
             <Link href="/" className="flex items-center">
               <Image
@@ -71,7 +71,7 @@ export default function Header() {
               </Link>
               <button
                 className="rounded-xl bg-primary-600 px-6 py-2.5 text-lg text-white 
-                shadow-subtle hover:shadow-elevated hover:bg-primary-500 
+                hover:bg-green-500 
                 transition-all duration-300"
               >
                 Get Started
