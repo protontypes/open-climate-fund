@@ -6,7 +6,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="fixed w-full backdrop-blur-lg top-0 z-50">
+    <header className="fixed w-full backdrop-blur-md top-0 z-50">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="bg-glass shadow-glass rounded-2xl px-6 py-3">
           <div className="flex justify-between items-center">

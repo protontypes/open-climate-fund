@@ -57,7 +57,6 @@ export default function HowItWorks() {
               <div className="bg-primary-50 rounded-xl p-4 w-16 h-16 flex items-center justify-center mb-6">
                 {step.icon}
               </div>
-
               <h3 className="text-2xl font-semibold tracking-tight text-green-500 mb-4">
                 {step.title}
               </h3>

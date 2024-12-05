@@ -23,8 +23,8 @@ export default function Hero() {
             <Link href="https://github.com/protontypes/open-sustainable-technology/blob/main/CONTRIBUTING.md#contributing-guide">
               <button
                 className="rounded-xl bg-primary-600 px-6 py-3 text-lg text-white 
-              shadow-subtle hover:shadow-elevated hover:bg-green-500 
-              transition-all duration-300"
+                shadow-subtle hover:shadow-elevated hover:bg-green-500
+                transition-all duration-300"
               >
                 Submit a Project
               </button>

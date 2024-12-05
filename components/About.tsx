@@ -1,9 +1,7 @@
 export default function About() {
   return (
-    <section
-      className="py-16 px-6 sm:px-8 lg:px-12 bg-silver-50 scroll-mt-32"
-      id="about"
-    >
+    <section className="pb-12 pt-12 px-6 sm:px-8 lg:px-12 bg-silver-50 scroll-mt-32"
+    id="about">
       <div className="max-w-7xl mx-auto animate-fade-in">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-primary-600 mb-12 text-center">
