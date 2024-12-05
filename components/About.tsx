@@ -12,7 +12,12 @@ export default function About() {
 
           <div className="space-y-8 bg-glass shadow-glass rounded-3xl p-8 lg:p-12 hover:shadow-elevated transition-all duration-300">
             <div className="prose prose-lg max-w-none">
-              <p className="text-lg text-silver-600 leading-relaxed">
+              <p className="text-lg text-silver-600 font-medium">
+                OpenClimate.fund is an initiative by {" "}
+                <a href="https://opensustain.tech" className="text-primary-600 hover:text-green-500 transition-colors">
+                  OpenSustain.tech
+                </a>
+                {" "}to support open source climate and sustainability projects.
                 Open source technology is powering thousands of solutions in the
                 climate and sustainability space. From tracking forest health to
                 designing eco-friendly products, these tools help us build a
