@@ -24,13 +24,6 @@ export default function GetStarted() {
               <FaGithub className="w-6 h-6" />
               Submit Your Project
             </Link>
-            <Link 
-              href="#how-it-works"
-              className="inline-block hover:text-primary-600 text-green-500 font-medium 
-                transition-all duration-300"
-            >
-              Learn more →
-            </Link>
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="pt-32 pb-12 px-6 sm:px-8 lg:px-12">
+    <section className="pt-32 pb-12 px-6 sm:px-8 lg:px-12" id="hero">
       <div className="max-w-7xl mx-auto animate-fade-in">
         <div
           className="bg-gradient-to-b from-azure-500/10 to-transparent 
