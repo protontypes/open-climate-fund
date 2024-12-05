@@ -69,13 +69,15 @@ export default function Header() {
               >
                 How It Works
               </Link>
-              <button
-                className="rounded-xl bg-primary-600 px-6 py-2.5 text-lg text-white 
-                hover:bg-green-500 
-                transition-all duration-300"
-              >
-                Get Started
-              </button>
+              <Link href="#get-started">
+                <button
+                  className="rounded-xl bg-primary-600 px-6 py-2.5 text-lg text-white 
+                  hover:bg-green-500 
+                  transition-all duration-300"
+                >
+                  Get Started
+                </button>
+              </Link>
             </div>
           </div>
           {isMenuOpen && (
