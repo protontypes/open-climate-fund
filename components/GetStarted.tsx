@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function GetStarted() {
   return (
-    <section className="pb-12 pt-12 px-6 sm:px-8 lg:px-12 bg-gradient-to-b from-silver-50 to-white">
+    <section className="pb-12 pt-12 px-6 sm:px-8 lg:px-12 bg-gradient-to-b from-silver-50 to-white" id="get-started">
       <div className="max-w-7xl mx-auto">
         <div className="bg-glass backdrop-blur-md shadow-elevated rounded-3xl p-12 text-center">
           <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-primary-600 mb-6">
@@ -23,13 +23,6 @@ export default function GetStarted() {
             >
               <FaGithub className="w-6 h-6" />
               Submit Your Project
-            </Link>
-            <Link 
-              href="#how-it-works"
-              className="inline-block hover:text-primary-600 text-green-500 font-medium 
-                transition-all duration-300"
-            >
-              Learn more →
             </Link>
           </div>
         </div>
