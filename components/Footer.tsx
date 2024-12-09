@@ -31,15 +31,27 @@ export default function Footer() {
           <p className="text-silver-400 text-sm">
             © {currentYear} OpenClimate.fund. All rights reserved.
           </p>
-          <div className="mt-4 md:mt-0">
+          <div className="text-sm mt-4 md:mt-0">
+            Powered by{" "}
             <Link
               href="https://opensustain.tech/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-silver-400 hover:text-primary-600 transition-colors text-sm"
+              className="text-silver-400 hover:text-primary-600 transition-colors text-sm mt-4 md:mt-0"
             >
-              Powered by OpenSustain.tech
+              OpenSustain.tech
             </Link>
+            <span className="text-sm mt-4 md:mt-0">{" and "}</span>
+            <span className="text-silver-400 text-sm">
+              <Link
+                href="https://ecosyste.ms/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-silver-400 hover:text-primary-600 transition-colors text-sm"
+              >
+                Ecosyste.ms
+              </Link>
+            </span>
           </div>
         </div>
       </div>
