@@ -16,7 +16,7 @@ export default function About() {
                   OpenSustain.tech
                 </a>
                 {" "}to support open source climate and sustainability projects.
-                Open source technology is powering thousands of solutions in the
+                Open source projects are powering thousands of solutions in the
                 climate and sustainability space. From tracking forest health to
                 designing eco-friendly products, these tools help us build a
                 more sustainable future. The best part on open source is that
