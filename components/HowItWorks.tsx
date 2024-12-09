@@ -1,6 +1,7 @@
 "use client";
 import { FaCodePullRequest } from "react-icons/fa6";
-import { FaSearch, FaRegHandPointRight } from "react-icons/fa";
+import { FaSearch, FaRegHandPointRight, FaTwitter, FaLinkedin, FaReddit, FaYCombinator } from "react-icons/fa";
+import { FaMastodon } from "react-icons/fa6";
 
 export default function HowItWorks() {
   const steps = [
@@ -13,12 +14,12 @@ export default function HowItWorks() {
       icon: <FaCodePullRequest className="w-8 h-8 text-primary-600" />,
     },
     {
-      title: "2. Pick Another Project",
+      title: "2. Pick Another Project", 
       description:
         "Choose any project from OpenSustain.tech to receive €100 (except your own - spread the love!)",
       details:
-        "Browse through amazing projects and pick one you'd like to support",
-      link: "https://opensustain.tech/spreadsheet/", // TODO: Add link to only the funding spreadsheet
+        "Browse amazing projects and discover their impact through <a class=\"text-primary-600 hover:text-green-500 transition-colors duration-300\" href=\"https://ecosyste.ms/\">Ecosyste.ms</a> data",
+      link: "https://opensustain.tech/spreadsheet/",
       icon: <FaSearch className="w-8 h-8 text-primary-600" />,
     },
     {
@@ -26,7 +27,11 @@ export default function HowItWorks() {
       description:
         "Once we check everything's good, we'll send €100 to your chosen project through GitHub Sponsors or Open Source Collective",
       details:
-        "That's it! You've helped two projects: one by adding it to our list, another by getting it funded",
+        "Share your contribution with <strong>#OpenClimateFund</strong> and help us grow the community! Your voice matters in supporting open source sustainability.",
+      socialShare: {
+        text: "I just helped fund open source climate projects through @OpenClimateFund! Join me in supporting sustainable technology! #OpenClimateFund",
+        link: "https://openclimate.fund",
+      },
       icon: <FaRegHandPointRight className="w-8 h-8 text-primary-600" />,
     },
   ];
@@ -67,19 +72,70 @@ export default function HowItWorks() {
 
               <div className="mt-auto">
                 <div className="bg-azure-500/10 rounded-xl p-4 mb-4">
-                  <p className="text-md text-silver-400">{step.details}</p>
+                  <p className="text-md text-silver-400" dangerouslySetInnerHTML={{ __html: step.details }}></p>
                 </div>
 
-                {step.link && (
-                  <a
-                    href={step.link}
-                    className="inline-block text-primary-600 hover:text-green-500 font-medium"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Show me →
-                  </a>
-                )}
+                <div className="flex items-center justify-between">
+                  {step.link && (
+                    <a
+                      href={step.link}
+                      className="inline-block text-primary-600 hover:text-green-500 font-medium"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Show me →
+                    </a>
+                  )}
+
+                  {step.socialShare && (
+                    <div className="flex gap-4">
+                      <a
+                        href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
+                          step.socialShare.text
+                        )}&url=${encodeURIComponent(step.socialShare.link)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-primary-600 hover:text-green-500 font-medium group"
+                      >
+                        <FaTwitter className="w-5 h-5" />
+                      </a>
+                      <a
+                        href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(step.socialShare.link)}&title=${encodeURIComponent(step.socialShare.text)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-primary-600 hover:text-green-500 font-medium group"
+                      >
+                        <FaLinkedin className="w-5 h-5" />
+                      </a>
+                      <a
+                        href={`https://mastodon.social/share?text=${encodeURIComponent(
+                          step.socialShare.text + " " + step.socialShare.link
+                        )}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-primary-600 hover:text-green-500 font-medium group"
+                      >
+                        <FaMastodon className="w-5 h-5" />
+                      </a>
+                      <a
+                        href={`https://news.ycombinator.com/submitlink?u=${encodeURIComponent(step.socialShare.link)}&t=${encodeURIComponent("Show HN: " + step.socialShare.text.substring(0, 47) + "!")}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-primary-600 hover:text-green-500 font-medium group"
+                      >
+                        <FaYCombinator className="w-5 h-5" />
+                      </a>
+                      <a
+                        href={`https://reddit.com/submit?url=${encodeURIComponent(step.socialShare.link)}&title=${encodeURIComponent(step.socialShare.text)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-primary-600 hover:text-green-500 font-medium group"
+                      >
+                        <FaReddit className="w-5 h-5" />
+                      </a>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           ))}
