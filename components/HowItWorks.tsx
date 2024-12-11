@@ -18,7 +18,7 @@ export default function HowItWorks() {
       description:
         "Choose any project from OpenSustain.tech to receive €100 (except your own - spread the love!)",
       details:
-        "Browse amazing projects and discover their impact through <a class=\"text-primary-600 hover:text-green-500 transition-colors duration-300\" href=\"https://ecosyste.ms/\">Ecosyste.ms</a> data",
+        "Browse all projects which provide a funding possibility with the link below.",
       link: "https://opensustain.tech/spreadsheet/",
       icon: <FaSearch className="w-8 h-8 text-primary-600" />,
     },
