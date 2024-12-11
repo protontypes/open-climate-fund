@@ -9,7 +9,7 @@ export default function GetStarted() {
       <div className="max-w-7xl mx-auto">
         <div className="relative bg-glass backdrop-blur-md shadow-elevated rounded-3xl p-12 text-center overflow-hidden">
           <Image
-            src="https://upload.wikimedia.org/wikipedia/commons/5/51/The_Caspian_Sea_%28NESDIS_2015-09-15%29.png"
+            src="vibrant-aerial-view-of-tropical-island-with-turquoise-water-and-reefs_croped.jpg"
             alt="Caspian Sea Satellite View"
             fill
             className="object-cover opacity-75"
@@ -24,7 +24,7 @@ export default function GetStarted() {
               Join our community of contributors and help drive sustainable technology forward through open source collaboration.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Link 
+              <Link
                 href="https://github.com/protontypes/open-sustainable-technology/blob/main/CONTRIBUTING.md#contributing-guide"
                 target="_blank"
                 className="rounded-xl bg-primary-600 px-8 py-4 text-lg text-white 
