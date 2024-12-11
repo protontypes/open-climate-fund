@@ -33,6 +33,11 @@ export default function RootLayout({
         />
         <meta name="apple-mobile-web-app-title" content="OCF" />
         <link rel="manifest" href="site.webmanifest" />
+        <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="0cbaaa61-be76-4338-8f17-8e9db91a1a85"
+        />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
