@@ -12,7 +12,7 @@ export default function GetStarted() {
       <div className="max-w-7xl mx-auto">
         <div className="relative bg-glass backdrop-blur-md shadow-elevated rounded-3xl p-12 text-center overflow-hidden">
           <Image
-            src="https://upload.wikimedia.org/wikipedia/commons/5/51/The_Caspian_Sea_%28NESDIS_2015-09-15%29.png"
+            src="vibrant-aerial-view-of-tropical-island-with-turquoise-water-and-reefs_croped.jpg"
             alt="Caspian Sea Satellite View"
             fill
             className="object-cover opacity-75"

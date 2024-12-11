@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto animate-fade-in">
         <div className="relative rounded-3xl shadow-elevated p-12 overflow-hidden">
           <Image
-            src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Caspian_Sea_%28Unsplash%29.jpg"
+            src="Caspian_Sea_croped-min.jpg"
             alt="Caspian Sea"
             fill
             className="object-cover opacity-75"
