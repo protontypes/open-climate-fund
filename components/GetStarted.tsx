@@ -5,7 +5,10 @@ import Image from 'next/image';
 
 export default function GetStarted() {
   return (
-    <section className="pb-12 pt-12 px-6 sm:px-8 lg:px-12 bg-gradient-to-b from-silver-50 to-white" id="get-started">
+    <section
+      className="pb-12 pt-12 px-6 sm:px-8 lg:px-12 bg-gradient-to-b from-silver-50 to-white"
+      id="get-started"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="relative bg-glass backdrop-blur-md shadow-elevated rounded-3xl p-12 text-center overflow-hidden">
           <Image
@@ -21,18 +24,18 @@ export default function GetStarted() {
               Ready to Make an Impact?
             </h2>
             <p className="text-xl text-white/90 max-w-2xl mx-auto mb-12">
-              Join our community of contributors and help drive sustainable technology forward through open source collaboration.
+              Join our community of contributors and help drive sustainable
+              technology forward through open source collaboration.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Link 
-                href="https://github.com/protontypes/open-sustainable-technology/blob/main/CONTRIBUTING.md#contributing-guide"
+              <Link
+                href="https://opensustain.tech/contributing/"
                 target="_blank"
                 className="rounded-xl bg-primary-600 px-8 py-4 text-lg text-white 
                   shadow-subtle hover:bg-green-500 
                   transition-all duration-300 flex items-center gap-3"
               >
-                <FaGithub className="w-6 h-6" />
-                Submit Your Project
+                Submit A Project
               </Link>
             </div>
           </div>
