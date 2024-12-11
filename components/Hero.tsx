@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function Hero() {
   return (
     <section className="pt-32 pb-12 px-6 sm:px-8 lg:px-12" id="hero">
@@ -19,17 +17,6 @@ export default function Hero() {
             Contribute to OpenSustain.tech and support open source projects
             making a difference in our world.
           </p>
-          <div className="mt-10 flex gap-4">
-            <Link href="https://github.com/protontypes/open-sustainable-technology/blob/main/CONTRIBUTING.md#contributing-guide">
-              <button
-                className="rounded-xl bg-primary-600 px-6 py-3 text-lg text-white 
-                shadow-subtle hover:shadow-elevated hover:bg-green-500
-                transition-all duration-300"
-              >
-                Submit a Project
-              </button>
-            </Link>
-          </div>
         </div>
       </div>
     </section>
