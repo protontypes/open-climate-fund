@@ -10,10 +10,10 @@ export default function Home() {
     <main>
       <ClientHeader />
       <Hero />
-      <About />
       <HowItWorks />
       <GetStarted />
+      <About />
       <Footer />
     </main>
-  )
+  );
 }

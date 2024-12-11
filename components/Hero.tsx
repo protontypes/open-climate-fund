@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 
 export default function Hero() {
@@ -19,24 +18,12 @@ export default function Hero() {
               className="text-5xl md:text-6xl lg:text-7xl font-semibold 
               tracking-tight text-white-500 leading-tight"
             >
-              Fund Open Source in<br className="hidden sm:inline" />
+              Fund Open Source in{" "}<br className="hidden sm:inline" />
               <span className="text-green-500">Climate & Sustainability</span>
             </h1>
             <p className="mt-6 text-xl text-silver-400 max-w-3xl">
-              Contribute to OpenSustain.tech and support open source projects
-              making a difference in our world.
+              Add projects to OpenSustain.tech to support open source making a difference in our world.
             </p>
-            <div className="mt-10 flex gap-4">
-              <Link href="https://github.com/protontypes/open-sustainable-technology/blob/main/CONTRIBUTING.md#contributing-guide">
-                <button
-                  className="rounded-xl bg-primary-600 px-6 py-3 text-lg text-white 
-                  shadow-subtle hover:shadow-elevated hover:bg-green-500
-                  transition-all duration-300"
-                >
-                  Submit a Project
-                </button>
-              </Link>
-            </div>
           </div>
         </div>
       </div>

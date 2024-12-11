@@ -15,8 +15,12 @@ export default function About() {
                 <a href="https://opensustain.tech" className="text-primary-600 hover:text-green-500 transition-colors">
                   OpenSustain.tech
                 </a>
-                {" "}to support open source climate and sustainability projects.
-                Open source technology is powering thousands of solutions in the
+                {" "} and {" "}
+                <a href="https://ecosyste.ms/" className="text-primary-600 hover:text-green-500 transition-colors">
+                  Ecosyste.ms
+                </a>
+                {" "} to support open source climate and sustainability projects.
+                Open source projects are powering thousands of solutions in the
                 climate and sustainability space. From tracking forest health to
                 designing eco-friendly products, these tools help us build a
                 more sustainable future. The best part on open source is that

@@ -69,7 +69,7 @@ export default function Header() {
               >
                 How It Works
               </Link>
-              <Link href="#get-started">
+              <Link href="https://opensustain.tech/contributing">
                 <button
                   className="rounded-xl bg-primary-600 px-6 py-2.5 text-lg text-white 
                   hover:bg-green-500 
