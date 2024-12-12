@@ -20,7 +20,7 @@ export default function GetStarted() {
           />
           <div className="absolute inset-0 bg-black/30 backdrop-blur-xs" />
           <div className="relative z-10">
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-white mb-6">
+            <h2 className="text-3xl md:text-4xl text-green-500 font-semibold tracking-tight mb-6">
               Ready to Make an Impact?
             </h2>
             <p className="text-xl text-white/90 max-w-2xl mx-auto mb-12">
