@@ -1,7 +1,12 @@
-"use client";
-import { FaCodePullRequest } from "react-icons/fa6";
-import { FaSearch, FaRegHandPointRight, FaTwitter, FaLinkedin, FaReddit, FaYCombinator } from "react-icons/fa";
-import { FaMastodon } from "react-icons/fa6";
+import React from "react";
+import {
+  FaSearch,
+  FaRegHandPointRight,
+  FaLinkedin,
+  FaReddit,
+  FaYCombinator,
+} from "react-icons/fa";
+import { FaBluesky, FaCodePullRequest, FaMastodon, FaXTwitter } from "react-icons/fa6";
 
 export default function HowItWorks() {
   const steps = [
@@ -14,7 +19,7 @@ export default function HowItWorks() {
       icon: <FaCodePullRequest className="w-8 h-8 text-primary-600" />,
     },
     {
-      title: "2. Pick Another Project", 
+      title: "2. Pick Another Project",
       description:
         "Choose any project from OpenSustain.tech to receive €100 (except your own - spread the love!)",
       details:
@@ -29,8 +34,17 @@ export default function HowItWorks() {
       details:
         "Share your contribution with <strong>#OpenClimateFund</strong> and help us grow the community! Your voice matters in supporting open source sustainability.",
       socialShare: {
-        text: "I just helped fund open source climate projects through @OpenClimateFund! Join me in supporting sustainable technology! #OpenClimateFund",
         link: "https://openclimate.fund",
+        platformText: {
+          bluesky:
+            "I just helped fund open source climate projects through @opensustaintech.bsky.social ! Join me in supporting sustainable technology! #OpenClimateFund",
+          post_with_website_url:
+            "I just helped fund open source climate projects through https://opensustain.tech/. Join me in supporting sustainable technology! #OpenClimateFund",
+          twitter:
+            "I just helped fund open source climate projects through @protontypes. Join me in supporting sustainable technology! #OpenClimateFund",
+          mastodon:
+            "I just helped fund open source climate projects through @opensustaintech . Join me in supporting sustainable technology! #OpenClimateFund",
+        },
       },
       icon: <FaRegHandPointRight className="w-8 h-8 text-primary-600" />,
     },
@@ -72,7 +86,10 @@ export default function HowItWorks() {
 
               <div className="mt-auto">
                 <div className="bg-azure-500/10 rounded-xl p-4 mb-4">
-                  <p className="text-md text-silver-400" dangerouslySetInnerHTML={{ __html: step.details }}></p>
+                  <p
+                    className="text-md text-silver-400"
+                    dangerouslySetInnerHTML={{ __html: step.details }}
+                  ></p>
                 </div>
 
                 <div className="flex items-center justify-between">
@@ -90,26 +107,8 @@ export default function HowItWorks() {
                   {step.socialShare && (
                     <div className="flex gap-4">
                       <a
-                        href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
-                          step.socialShare.text
-                        )}&url=${encodeURIComponent(step.socialShare.link)}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-primary-600 hover:text-green-500 font-medium group"
-                      >
-                        <FaTwitter className="w-5 h-5" />
-                      </a>
-                      <a
-                        href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(step.socialShare.link)}&title=${encodeURIComponent(step.socialShare.text)}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-primary-600 hover:text-green-500 font-medium group"
-                      >
-                        <FaLinkedin className="w-5 h-5" />
-                      </a>
-                      <a
                         href={`https://mastodon.social/share?text=${encodeURIComponent(
-                          step.socialShare.text + " " + step.socialShare.link
+                          step.socialShare.platformText.mastodon
                         )}`}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -118,7 +117,24 @@ export default function HowItWorks() {
                         <FaMastodon className="w-5 h-5" />
                       </a>
                       <a
-                        href={`https://news.ycombinator.com/submitlink?u=${encodeURIComponent(step.socialShare.link)}&t=${encodeURIComponent("Show HN: " + step.socialShare.text.substring(0, 47) + "!")}`}
+                        href={`https://bsky.app/intent/compose?text=${encodeURIComponent(
+                          step.socialShare.platformText.bluesky
+                        )}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-primary-600 hover:text-green-500 font-medium group"
+                      >
+                        <FaBluesky className="w-5 h-5" />
+                      </a>
+                      <a
+                        href={`https://news.ycombinator.com/submitlink?u=${encodeURIComponent(
+                          step.socialShare.link
+                        )}&t=${encodeURIComponent(
+                          step.socialShare.platformText.post_with_website_url.substring(
+                            0,
+                            47
+                          ) + "!"
+                        )}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 text-primary-600 hover:text-green-500 font-medium group"
@@ -126,12 +142,38 @@ export default function HowItWorks() {
                         <FaYCombinator className="w-5 h-5" />
                       </a>
                       <a
-                        href={`https://reddit.com/submit?url=${encodeURIComponent(step.socialShare.link)}&title=${encodeURIComponent(step.socialShare.text)}`}
+                        href={`https://reddit.com/submit?url=${encodeURIComponent(
+                          step.socialShare.link
+                        )}&title=${encodeURIComponent(
+                          step.socialShare.platformText.post_with_website_url
+                        )}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 text-primary-600 hover:text-green-500 font-medium group"
                       >
                         <FaReddit className="w-5 h-5" />
+                      </a>
+                      <a
+                        href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(
+                          step.socialShare.link
+                        )}&title=${encodeURIComponent(
+                          step.socialShare.platformText.post_with_website_url
+                        )}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-primary-600 hover:text-green-500 font-medium group"
+                      >
+                        <FaLinkedin className="w-5 h-5" />
+                      </a>
+                      <a
+                        href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
+                          step.socialShare.platformText.twitter
+                        )}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-primary-600 hover:text-green-500 font-medium group"
+                      >
+                        <FaXTwitter className="w-5 h-5" />
                       </a>
                     </div>
                   )}
