@@ -44,7 +44,7 @@ export default function HowItWorks() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-primary-600 mb-4">
-            How It Works
+            Here&apos;s What You Can Do
           </h2>
           <p className="text-xl text-silver-600">
             Three simple steps to help fund open source climate projects
