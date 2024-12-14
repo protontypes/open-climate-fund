@@ -1,6 +1,6 @@
 "use client";
 import { FaCodePullRequest } from "react-icons/fa6";
-import { FaSearch, FaRegHandPointRight, FaTwitter, FaLinkedin, FaReddit, FaYCombinator } from "react-icons/fa";
+import { FaSearch, FaRegHandPointRight, FaTwitter, FaLinkedin, FaReddit } from "react-icons/fa";
 import { FaMastodon } from "react-icons/fa6";
 
 export default function HowItWorks() {
