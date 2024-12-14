@@ -47,12 +47,12 @@ export default function About() {
                   Join Our First Funding Round
                 </h3>
                 <p className="text-lg text-silver-600 leading-relaxed">
-                  We&apos;re starting with $10,000 to support 100 projects with
-                  $100 each. Here&apos;s how you can help: Add an open source
+                  We&apos;re starting with 10,000€ to support 100 projects with
+                  100€ each. Here&apos;s how you can help: Add an open source
                   sustainability project to OpenSustain.tech, then pick another
                   listed project to receive funding (as long as it&apos;s not
                   your own). Once we review your contribution, we&apos;ll send
-                  $100 to your chosen project through their preferred funding
+                  100€ to your chosen project through their preferred funding
                   platform.
                 </p>
               </div>

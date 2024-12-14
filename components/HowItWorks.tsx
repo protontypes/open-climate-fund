@@ -8,7 +8,7 @@ export default function HowItWorks() {
     {
       title: "1. Add a Project",
       description:
-        "Find an open source project in the climate and sustainability space and add it to OpenSustain.tech. We'll guide you through the process!",
+        "Find an missing impactful open source project in climate and sustainability and add it to OpenSustain.tech. We'll guide you through the process!",
       details: "It's easy - just open a pull request with the project details",
       link: "https://github.com/protontypes/open-sustainable-technology/blob/main/CONTRIBUTING.md#contributing-guide",
       icon: <FaCodePullRequest className="w-8 h-8 text-primary-600" />,
@@ -16,7 +16,7 @@ export default function HowItWorks() {
     {
       title: "2. Pick Another Project", 
       description:
-        "Choose any project from OpenSustain.tech to receive €100 (except your own - spread the love!)",
+        "Choose any project from OpenSustain.tech to receive 100€ (except your own - spread the love!)",
       details:
         "Browse all projects which provide a funding possibility with the link below.",
       link: "https://opensustain.tech/spreadsheet/",
@@ -25,9 +25,9 @@ export default function HowItWorks() {
     {
       title: "3. We Send the Money",
       description:
-        "Once we check everything's good, we'll send €100 to your chosen project through GitHub Sponsors or Open Source Collective",
+        "Once your pull request is merged, we'll donate €100 to your chosen project via Open Source Collective or GitHub Sponsors",
       details:
-        "Share your contribution with <strong>#OpenClimateFund</strong> and help us grow the community! Your voice matters in supporting open source sustainability.",
+        "Share your contribution with <strong>#OpenClimateFund</strong> and help us grow the community! Your voice matters in supporting open source in sustainability.",
       socialShare: {
         text: "I just helped fund open source climate projects through @OpenClimateFund! Join me in supporting sustainable technology! #OpenClimateFund",
         link: "https://openclimate.fund",
@@ -90,16 +90,6 @@ export default function HowItWorks() {
                   {step.socialShare && (
                     <div className="flex gap-4">
                       <a
-                        href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
-                          step.socialShare.text
-                        )}&url=${encodeURIComponent(step.socialShare.link)}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-primary-600 hover:text-green-500 font-medium group"
-                      >
-                        <FaTwitter className="w-5 h-5" />
-                      </a>
-                      <a
                         href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(step.socialShare.link)}&title=${encodeURIComponent(step.socialShare.text)}`}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -118,20 +108,22 @@ export default function HowItWorks() {
                         <FaMastodon className="w-5 h-5" />
                       </a>
                       <a
-                        href={`https://news.ycombinator.com/submitlink?u=${encodeURIComponent(step.socialShare.link)}&t=${encodeURIComponent("Show HN: " + step.socialShare.text.substring(0, 47) + "!")}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-primary-600 hover:text-green-500 font-medium group"
-                      >
-                        <FaYCombinator className="w-5 h-5" />
-                      </a>
-                      <a
                         href={`https://reddit.com/submit?url=${encodeURIComponent(step.socialShare.link)}&title=${encodeURIComponent(step.socialShare.text)}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 text-primary-600 hover:text-green-500 font-medium group"
                       >
                         <FaReddit className="w-5 h-5" />
+                      </a>
+                      <a
+                        href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
+                          step.socialShare.text
+                        )}&url=${encodeURIComponent(step.socialShare.link)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-primary-600 hover:text-green-500 font-medium group"
+                      >
+                        <FaTwitter className="w-5 h-5" />
                       </a>
                     </div>
                   )}

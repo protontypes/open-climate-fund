@@ -21,7 +21,7 @@ export default function Footer() {
               />
             </Link>
             <p className="mt-6 text-sm text-silver-400">
-              Empowering open source sustainability through innovative funding.
+              Empowering open source in climate and sustainability through innovative funding.
             </p>
           </div>
         </div>
@@ -29,7 +29,7 @@ export default function Footer() {
         {/* Footer Bottom */}
         <div className="pt-2 flex flex-col md:flex-row justify-between items-center">
           <p className="text-silver-400 text-sm">
-            © {currentYear} OpenClimate.fund. All rights reserved.
+            © {currentYear} OpenClimate.fund.
           </p>
           <div className="text-sm mt-4 md:mt-0">
             Powered by{" "}
