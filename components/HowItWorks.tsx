@@ -25,7 +25,7 @@ export default function HowItWorks() {
     {
       title: "3. We Send the Money",
       description:
-        "Once your pull request is merged, we'll donate €100 to your chosen project via Open Source Collective or GitHub Sponsors",
+        "Once your pull request is merged, we'll donate 100€ to your chosen project via Open Source Collective or GitHub Sponsors",
       details:
         "Share your contribution with <strong>#OpenClimateFund</strong> and help us grow the community! Your voice matters in supporting open source in sustainability.",
       socialShare: {
