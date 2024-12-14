@@ -27,7 +27,7 @@ export default function HowItWorks() {
       description:
         "Once your pull request is merged, we'll donate €100 to your chosen project via Open Source Collective or GitHub Sponsors",
       details:
-        "Share your contribution with <strong>#OpenClimateFund</strong> and help us grow the community! Your voice matters in supporting open source sustainability.",
+        "Share your contribution with <strong>#OpenClimateFund</strong> and help us grow the community! Your voice matters in supporting open source in sustainability.",
       socialShare: {
         text: "I just helped fund open source climate projects through @OpenClimateFund! Join me in supporting sustainable technology! #OpenClimateFund",
         link: "https://openclimate.fund",
