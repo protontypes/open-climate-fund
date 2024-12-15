@@ -18,7 +18,7 @@ export default function Hero() {
               className="text-5xl md:text-6xl lg:text-7xl font-semibold 
               tracking-tight text-white-500 leading-tight"
             >
-              Find and Fund <br className="hidden sm:inline" />
+              Find+Fund <br className="hidden sm:inline" />
               Open Source in <br className="hidden sm:inline" />
               <span className="text-green-500">Climate & Sustainability</span>
             </h1>
