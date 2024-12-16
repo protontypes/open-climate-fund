@@ -1,19 +1,14 @@
-import React from "react";
-import {
-  FaSearch,
-  FaRegHandPointRight,
-  FaLinkedin,
-  FaReddit,
-  FaYCombinator,
-} from "react-icons/fa";
-import { FaBluesky, FaCodePullRequest, FaMastodon, FaXTwitter } from "react-icons/fa6";
+"use client";
+
+import { FaSearch, FaRegHandPointRight, FaLinkedin, FaReddit, FaYCombinator } from "react-icons/fa";
+import { FaCodePullRequest, FaMastodon, FaBluesky, FaXTwitter } from "react-icons/fa6";
 
 export default function HowItWorks() {
   const steps = [
     {
       title: "1. Add a Project",
       description:
-        "Find an open source project in the climate and sustainability space and add it to OpenSustain.tech. We'll guide you through the process!",
+        "Find an missing impactful open source project in climate and sustainability and add it to OpenSustain.tech. We'll guide you through the process!",
       details: "It's easy - just open a pull request with the project details",
       link: "https://github.com/protontypes/open-sustainable-technology/blob/main/CONTRIBUTING.md#contributing-guide",
       icon: <FaCodePullRequest className="w-8 h-8 text-primary-600" />,
@@ -21,7 +16,7 @@ export default function HowItWorks() {
     {
       title: "2. Pick Another Project",
       description:
-        "Choose any project from OpenSustain.tech to receive €100 (except your own - spread the love!)",
+        "Choose any project from OpenSustain.tech to receive 100€ (except your own - spread the love!)",
       details:
         "Browse all projects which provide a funding possibility with the link below.",
       link: "https://opensustain.tech/spreadsheet/",
@@ -30,9 +25,9 @@ export default function HowItWorks() {
     {
       title: "3. We Send the Money",
       description:
-        "Once we check everything's good, we'll send €100 to your chosen project through GitHub Sponsors or Open Source Collective",
+        "Once your pull request is merged, we'll donate €100 to your chosen project via Open Source Collective or GitHub Sponsors",
       details:
-        "Share your contribution with <strong>#OpenClimateFund</strong> and help us grow the community! Your voice matters in supporting open source sustainability.",
+        "Share your contribution with <strong>#OpenClimateFund</strong> and help us grow the community! Your voice matters in supporting open source in sustainability.",
       socialShare: {
         link: "https://openclimate.fund",
         platformText: {

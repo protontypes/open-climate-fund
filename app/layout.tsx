@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "OpenClimate.fund",
-  description: "Fund open source sustainability projects",
+  description: "Building an open science funding revolution for open source climate action",
 };
 
 export default function RootLayout({
@@ -38,8 +38,21 @@ export default function RootLayout({
           src="https://cloud.umami.is/script.js"
           data-website-id="0cbaaa61-be76-4338-8f17-8e9db91a1a85"
         />
+                <meta property="og:title" content="OpenClimate.fund" />
+        <meta
+          property="og:description"
+          content="Building an open science funding revolution for open source climate action."
+        />
+        <meta
+          property="og:image"
+          content="preview_image.jpeg"
+        />
+        <meta property="og:url" content="https://openclimate.fund" />
+        <meta property="og:type" content="website" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
 }
+
+
