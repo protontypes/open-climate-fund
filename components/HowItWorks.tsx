@@ -1,6 +1,6 @@
 "use client";
 
-import { FaSearch, FaRegHandPointRight, FaLinkedin, FaReddit, FaYCombinator } from "react-icons/fa";
+import { FaSearch, FaRegHandPointRight, FaLinkedin, FaReddit } from "react-icons/fa";
 import { FaCodePullRequest, FaMastodon, FaBluesky, FaXTwitter } from "react-icons/fa6";
 
 export default function HowItWorks() {
@@ -9,7 +9,7 @@ export default function HowItWorks() {
       title: "1. Add a Project",
       description:
         "Find an missing impactful open source project in climate and sustainability and add it to OpenSustain.tech. We'll guide you through the process!",
-      details: "It's easy - just open a pull request with the project details",
+      details: "It is easy - just open a pull request and provide the repository, title and a sentence.",
       link: "https://github.com/protontypes/open-sustainable-technology/blob/main/CONTRIBUTING.md#contributing-guide",
       icon: <FaCodePullRequest className="w-8 h-8 text-primary-600" />,
     },
@@ -18,14 +18,14 @@ export default function HowItWorks() {
       description:
         "Choose any project from OpenSustain.tech to receive 100€ (except your own - spread the love!)",
       details:
-        "Browse all projects which provide a funding possibility with the link below.",
+        "Browse all projects which provide a funding possibility.",
       link: "https://opensustain.tech/spreadsheet/",
       icon: <FaSearch className="w-8 h-8 text-primary-600" />,
     },
     {
       title: "3. We Send the Money",
       description:
-        "Once your pull request is merged, we'll donate €100 to your chosen project via Open Source Collective or GitHub Sponsors",
+        "Once your pull request is merged, we'll donate 100€ to your chosen project via Open Source Collective or GitHub Sponsors",
       details:
         "Share your contribution with <strong>#OpenClimateFund</strong> and help us grow the community! Your voice matters in supporting open source in sustainability.",
       socialShare: {
@@ -112,21 +112,6 @@ export default function HowItWorks() {
                         className="inline-flex items-center gap-2 text-primary-600 hover:text-green-500 font-medium group"
                       >
                         <FaBluesky className="w-5 h-5" />
-                      </a>
-                      <a
-                        href={`https://news.ycombinator.com/submitlink?u=${encodeURIComponent(
-                          step.socialShare.link
-                        )}&t=${encodeURIComponent(
-                          step.socialShare.text.substring(
-                            0,
-                            52
-                          ) + "! #OpenClimateFund"
-                        )}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-primary-600 hover:text-green-500 font-medium group"
-                      >
-                        <FaYCombinator className="w-5 h-5" />
                       </a>
                       <a
                         href={`https://reddit.com/submit?url=${encodeURIComponent(
