@@ -1,7 +1,7 @@
 "use client";
-import { FaCodePullRequest } from "react-icons/fa6";
-import { FaSearch, FaRegHandPointRight, FaTwitter, FaLinkedin, FaReddit, FaYCombinator } from "react-icons/fa";
-import { FaMastodon } from "react-icons/fa6";
+
+import { FaSearch, FaRegHandPointRight, FaLinkedin, FaReddit, FaYCombinator } from "react-icons/fa";
+import { FaCodePullRequest, FaMastodon, FaBluesky, FaXTwitter } from "react-icons/fa6";
 
 export default function HowItWorks() {
   const steps = [
@@ -14,7 +14,7 @@ export default function HowItWorks() {
       icon: <FaCodePullRequest className="w-8 h-8 text-primary-600" />,
     },
     {
-      title: "2. Pick Another Project", 
+      title: "2. Pick Another Project",
       description:
         "Choose any project from OpenSustain.tech to receive 100€ (except your own - spread the love!)",
       details:
@@ -29,8 +29,9 @@ export default function HowItWorks() {
       details:
         "Share your contribution with <strong>#OpenClimateFund</strong> and help us grow the community! Your voice matters in supporting open source in sustainability.",
       socialShare: {
-        text: "I just helped fund open source climate projects through @OpenClimateFund! Join me in supporting sustainable technology! #OpenClimateFund",
         link: "https://openclimate.fund",
+        text: 
+        "I have just nominated an #opensource climate project via openclimate.fund. Join us in supporting open #climate and environmental technology! An initiative by opensustain.tech #OpenClimateFund",
       },
       icon: <FaRegHandPointRight className="w-8 h-8 text-primary-600" />,
     },
@@ -72,7 +73,10 @@ export default function HowItWorks() {
 
               <div className="mt-auto">
                 <div className="bg-azure-500/10 rounded-xl p-4 mb-4">
-                  <p className="text-md text-silver-400" dangerouslySetInnerHTML={{ __html: step.details }}></p>
+                  <p
+                    className="text-md text-silver-400"
+                    dangerouslySetInnerHTML={{ __html: step.details }}
+                  ></p>
                 </div>
 
                 <div className="flex items-center justify-between">
@@ -90,16 +94,8 @@ export default function HowItWorks() {
                   {step.socialShare && (
                     <div className="flex gap-4">
                       <a
-                        href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(step.socialShare.link)}&title=${encodeURIComponent(step.socialShare.text)}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-primary-600 hover:text-green-500 font-medium group"
-                      >
-                        <FaLinkedin className="w-5 h-5" />
-                      </a>
-                      <a
                         href={`https://mastodon.social/share?text=${encodeURIComponent(
-                          step.socialShare.text + " " + step.socialShare.link
+                          step.socialShare.text
                         )}`}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -108,7 +104,36 @@ export default function HowItWorks() {
                         <FaMastodon className="w-5 h-5" />
                       </a>
                       <a
-                        href={`https://reddit.com/submit?url=${encodeURIComponent(step.socialShare.link)}&title=${encodeURIComponent(step.socialShare.text)}`}
+                        href={`https://bsky.app/intent/compose?text=${encodeURIComponent(
+                          step.socialShare.text
+                        )}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-primary-600 hover:text-green-500 font-medium group"
+                      >
+                        <FaBluesky className="w-5 h-5" />
+                      </a>
+                      <a
+                        href={`https://news.ycombinator.com/submitlink?u=${encodeURIComponent(
+                          step.socialShare.link
+                        )}&t=${encodeURIComponent(
+                          step.socialShare.text.substring(
+                            0,
+                            52
+                          ) + "! #OpenClimateFund"
+                        )}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-primary-600 hover:text-green-500 font-medium group"
+                      >
+                        <FaYCombinator className="w-5 h-5" />
+                      </a>
+                      <a
+                        href={`https://reddit.com/submit?url=${encodeURIComponent(
+                          step.socialShare.link
+                        )}&title=${encodeURIComponent(
+                          step.socialShare.text
+                        )}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 text-primary-600 hover:text-green-500 font-medium group"
@@ -116,14 +141,26 @@ export default function HowItWorks() {
                         <FaReddit className="w-5 h-5" />
                       </a>
                       <a
-                        href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
+                        href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(
+                          step.socialShare.link
+                        )}&title=${encodeURIComponent(
                           step.socialShare.text
-                        )}&url=${encodeURIComponent(step.socialShare.link)}`}
+                        )}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 text-primary-600 hover:text-green-500 font-medium group"
                       >
-                        <FaTwitter className="w-5 h-5" />
+                        <FaLinkedin className="w-5 h-5" />
+                      </a>
+                      <a
+                        href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
+                          step.socialShare.text
+                        )}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-primary-600 hover:text-green-500 font-medium group"
+                      >
+                        <FaXTwitter className="w-5 h-5" />
                       </a>
                     </div>
                   )}
