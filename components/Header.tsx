@@ -6,9 +6,9 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="fixed w-full top-0 z-50">
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <div className="rounded-2xl px-6 py-3">
+    <header className="fixed w-full top-0 z-50 bg-background shadow-sm border-b border-black-400">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="py-3">
           <div className="flex justify-between items-center">
             <Link href="/" className="flex items-center">
               <Image
