@@ -30,16 +30,8 @@ export default function HowItWorks() {
         "Share your contribution with <strong>#OpenClimateFund</strong> and help us grow the community! Your voice matters in supporting open source in sustainability.",
       socialShare: {
         link: "https://openclimate.fund",
-        platformText: {
-          bluesky:
-            "I just helped fund open source climate projects through @opensustaintech.bsky.social ! Join me in supporting sustainable technology! #OpenClimateFund",
-          post_with_website_url:
-            "I just helped fund open source climate projects through https://opensustain.tech/. Join me in supporting sustainable technology! #OpenClimateFund",
-          twitter:
-            "I just helped fund open source climate projects through @protontypes. Join me in supporting sustainable technology! #OpenClimateFund",
-          mastodon:
-            "I just helped fund open source climate projects through @opensustaintech . Join me in supporting sustainable technology! #OpenClimateFund",
-        },
+        text: 
+        "I have just nominated an #opensource climate project via openclimate.fund. Join us in supporting open #climate and environmental technology! An initiative by opensustain.tech #OpenClimateFund",
       },
       icon: <FaRegHandPointRight className="w-8 h-8 text-primary-600" />,
     },
@@ -103,7 +95,7 @@ export default function HowItWorks() {
                     <div className="flex gap-4">
                       <a
                         href={`https://mastodon.social/share?text=${encodeURIComponent(
-                          step.socialShare.platformText.mastodon
+                          step.socialShare.text
                         )}`}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -113,7 +105,7 @@ export default function HowItWorks() {
                       </a>
                       <a
                         href={`https://bsky.app/intent/compose?text=${encodeURIComponent(
-                          step.socialShare.platformText.bluesky
+                          step.socialShare.text
                         )}`}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -125,10 +117,10 @@ export default function HowItWorks() {
                         href={`https://news.ycombinator.com/submitlink?u=${encodeURIComponent(
                           step.socialShare.link
                         )}&t=${encodeURIComponent(
-                          step.socialShare.platformText.post_with_website_url.substring(
+                          step.socialShare.text.substring(
                             0,
-                            47
-                          ) + "!"
+                            52
+                          ) + "! #OpenClimateFund"
                         )}`}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -140,7 +132,7 @@ export default function HowItWorks() {
                         href={`https://reddit.com/submit?url=${encodeURIComponent(
                           step.socialShare.link
                         )}&title=${encodeURIComponent(
-                          step.socialShare.platformText.post_with_website_url
+                          step.socialShare.text
                         )}`}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -152,7 +144,7 @@ export default function HowItWorks() {
                         href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(
                           step.socialShare.link
                         )}&title=${encodeURIComponent(
-                          step.socialShare.platformText.post_with_website_url
+                          step.socialShare.text
                         )}`}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -162,7 +154,7 @@ export default function HowItWorks() {
                       </a>
                       <a
                         href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
-                          step.socialShare.platformText.twitter
+                          step.socialShare.text
                         )}`}
                         target="_blank"
                         rel="noopener noreferrer"
