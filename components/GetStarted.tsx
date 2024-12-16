@@ -23,19 +23,19 @@ export default function GetStarted() {
             <h2 className="text-3xl md:text-4xl text-green-500 font-semibold tracking-tight mb-6">
               Ready to Make an Impact?
             </h2>
-            <p className="text-xl text-white/90 max-w-2xl mx-auto mb-12">
-              <b>Join our community of contributors and help drive sustainable
-              technology forward through open source collaboration.</b>
+            <p className="text-xl text-white/90 text-bold max-w-2xl mx-auto mb-12">
+              Join our community of contributors and help drive sustainable
+              technology forward through open source collaboration.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Link
                 href="https://opensustain.tech/contributing/"
                 target="_blank"
                 className="rounded-xl bg-primary-600 px-8 py-4 text-lg text-white 
-                  shadow-subtle hover:bg-green-500 
+                  text-bold shadow-subtle hover:bg-green-500 
                   transition-all duration-300 flex items-center gap-3"
               >
-                <b>Submit A Project</b>
+                Submit A Project
               </Link>
             </div>
           </div>

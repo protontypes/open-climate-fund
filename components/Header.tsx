@@ -59,23 +59,23 @@ export default function Header() {
             <div className="hidden sm:flex items-center space-x-6">
               <Link
                 href="#about"
-                className="py-2 text-lg text-silver-400 hover:text-primary-600 transition-colors"
+                className="py-2 text-lg text-silver-400 text-bold hover:text-primary-600 transition-colors"
               >
-                <b>About</b>
+                About
               </Link>
               <Link
                 href="#how-it-works"
-                className="py-2 text-lg text-silver-400 hover:text-primary-600 transition-colors"
+                className="py-2 text-lg text-silver-400 text-bold hover:text-primary-600 transition-colors"
               >
-                <b>How It Works</b>
+                How It Works
               </Link>
               <Link href="https://opensustain.tech/contributing">
                 <button
                   className="rounded-xl bg-primary-600 px-6 py-2.5 text-lg text-white 
-                  hover:bg-green-500 
+                  text-bold hover:bg-green-500 
                   transition-all duration-300"
                 >
-                  <b>Get Started</b>
+                  Get Started
                 </button>
               </Link>
             </div>
