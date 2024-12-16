@@ -1,6 +1,6 @@
 "use client";
 
-import { FaSearch, FaRegHandPointRight, FaLinkedin, FaReddit, FaYCombinator } from "react-icons/fa";
+import { FaSearch, FaRegHandPointRight, FaLinkedin, FaReddit } from "react-icons/fa";
 import { FaCodePullRequest, FaMastodon, FaBluesky, FaXTwitter } from "react-icons/fa6";
 
 export default function HowItWorks() {
@@ -112,21 +112,6 @@ export default function HowItWorks() {
                         className="inline-flex items-center gap-2 text-primary-600 hover:text-green-500 font-medium group"
                       >
                         <FaBluesky className="w-5 h-5" />
-                      </a>
-                      <a
-                        href={`https://news.ycombinator.com/submitlink?u=${encodeURIComponent(
-                          step.socialShare.link
-                        )}&t=${encodeURIComponent(
-                          step.socialShare.text.substring(
-                            0,
-                            52
-                          ) + "! #OpenClimateFund"
-                        )}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-primary-600 hover:text-green-500 font-medium group"
-                      >
-                        <FaYCombinator className="w-5 h-5" />
                       </a>
                       <a
                         href={`https://reddit.com/submit?url=${encodeURIComponent(
