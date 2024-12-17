@@ -8,7 +8,7 @@ export default function HowItWorks() {
     {
       title: "1. Add a Project",
       description:
-        "Find an missing impactful open source project in climate and sustainability and add it to OpenSustain.tech. We'll guide you through the process!",
+        "Find impactful open source project in climate and sustainability and add it to OpenSustain.tech. We'll guide you through the process!",
       details: "It is easy - just open a pull request and provide the repository, title and a sentence.",
       link: "https://github.com/protontypes/open-sustainable-technology/blob/main/CONTRIBUTING.md#contributing-guide",
       icon: <FaCodePullRequest className="w-8 h-8 text-primary-600" />,
@@ -16,7 +16,7 @@ export default function HowItWorks() {
     {
       title: "2. Pick Another Project",
       description:
-        "Choose any project from OpenSustain.tech to receive 100€ (except your own - spread the love!)",
+        "Choose another Open Source to receive 100€ (except your own - spread the love!)",
       details:
         "Browse all projects which provide a funding possibility.",
       link: "https://opensustain.tech/spreadsheet/",
