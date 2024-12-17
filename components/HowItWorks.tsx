@@ -8,7 +8,7 @@ export default function HowItWorks() {
     {
       title: "1. Add a Project",
       description:
-        "Find an missing impactful open source project in climate and sustainability and add it to OpenSustain.tech. We'll guide you through the process!",
+        "Find impactful open source project in climate and sustainability and add it to OpenSustain.tech. We'll guide you through the process!",
       details: "It is easy - just open a pull request and provide the repository, title and a sentence.",
       link: "https://github.com/protontypes/open-sustainable-technology/blob/main/CONTRIBUTING.md#contributing-guide",
       icon: <FaCodePullRequest className="w-8 h-8 text-primary-600" />,
@@ -16,7 +16,7 @@ export default function HowItWorks() {
     {
       title: "2. Pick Another Project",
       description:
-        "Choose any project from OpenSustain.tech to receive 100€ (except your own - spread the love!)",
+        "Choose another Open Source to receive 100€ (except your own - spread the love!)",
       details:
         "Browse all projects which provide a funding possibility.",
       link: "https://opensustain.tech/spreadsheet/",
@@ -25,13 +25,13 @@ export default function HowItWorks() {
     {
       title: "3. We Send the Money",
       description:
-        "Once your pull request is merged, we'll donate 100€ to your chosen project via Open Source Collective or GitHub Sponsors",
+        "Once your pull request is merged, we'll donate 100€ to your chosen project.",
       details:
         "Share your contribution with <strong>#OpenClimateFund</strong> and help us grow the community! Your voice matters in supporting open source in sustainability.",
       socialShare: {
         link: "https://openclimate.fund",
-        text: 
-        "I have just nominated an #opensource climate project via openclimate.fund. Join us in supporting open #climate and environmental technology! An initiative by opensustain.tech #OpenClimateFund",
+        text:
+          "I have just nominated an #opensource climate project via openclimate.fund. Join us in supporting open #climate and environmental technology! An initiative by opensustain.tech #OpenClimateFund",
       },
       icon: <FaRegHandPointRight className="w-8 h-8 text-primary-600" />,
     },

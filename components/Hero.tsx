@@ -22,8 +22,7 @@ export default function Hero() {
               <span className="text-green-500">Climate & Sustainability</span>
             </h1>
             <p className="mt-6 text-xl text-silver-400 max-w-3xl">
-              Add projects to OpenSustain.tech to support open source making a
-              difference in our world.
+              Submit a project to OpenSustain.tech, and we'll fund another existing project of your choice
             </p>
           </div>
         </div>
