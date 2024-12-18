@@ -1,5 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { FaBluesky, FaMastodon } from 'react-icons/fa6';
+import { FaGithub } from 'react-icons/fa';
+
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -23,6 +26,35 @@ export default function Footer() {
             <p className="mt-6 text-sm text-silver-400">
               Empowering open source in climate and sustainability through innovative funding.
             </p>
+            <div className="flex gap-4 mt-4">
+              <Link
+                href="https://mastodon.social/@opensustaintech"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-600 hover:text-green-500 transition-colors"
+              >
+                <FaMastodon className="w-5 h-5" />
+              </Link>
+              <Link
+                href="https://bsky.app/profile/opensustaintech.bsky.social"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-600 hover:text-green-500 transition-colors"
+              >
+                <FaBluesky className="w-5 h-5" />
+              </Link>
+            </div>
+            <div className="mt-4">
+              <Link
+                href="https://github.com/protontypes/open-climate-fund"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-600 hover:text-green-500 transition-colors inline-flex items-center gap-1 text-sm"
+              >
+                <FaGithub className="w-4 h-4" />
+                View repository
+              </Link>
+            </div>
           </div>
         </div>
 
