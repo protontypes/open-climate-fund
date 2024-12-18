@@ -16,7 +16,7 @@ export default function HowItWorks() {
     {
       title: "2. Pick Another Project",
       description:
-        "Choose another Open Source to receive 100€ (except your own - spread the love!)",
+        "Choose another project to receive 100€ (except your own - spread the love!)",
       details:
         "Browse all projects which provide a funding possibility.",
       link: "https://opensustain.tech/spreadsheet/",
